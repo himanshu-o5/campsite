@@ -117,12 +117,27 @@ header .menu a{
 .slider .list .item.active p:nth-child(3){
     animation-duration: 1s;
 }
-.arrows{
+.buttons{
     position: absolute;
     top: 30%;
     right: 50px;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+.buttons .view{
+    text-decoration: none;
+    background-color: #eee5;
+    padding: 15px 25px;
+    border: none;
+    font-family: monospace;
+    border-radius: 5px;
+    font-size: x-large;
+    color: #eee;
+    transition: .5s;
+}
+
 .arrows button{
     background-color: #eee5;
     border: none;
@@ -134,10 +149,14 @@ header .menu a{
     color: #eee;
     transition: .5s;
 }
-.arrows button:hover{
+.buttons button:hover{
     background-color: #eee;
     color: black;
+    cursor: pointer;
 }
+
+
+
 .thumbnail{
     position: absolute;
     bottom: 50px;

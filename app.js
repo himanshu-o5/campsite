@@ -1,3 +1,8 @@
+// Set session storage data
+window.sessionStorage.setItem("currentContinent", "asia");
+
+
+// Get requied buttons and thumbnails
 let items = document.querySelectorAll('.slider .list .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -6,6 +11,7 @@ let thumbnails = document.querySelectorAll('.thumbnail .item');
 // variables for current active
 let countItem = items.length;
 let itemActive = 0;
+let continents = ["asia", "europe", "america", "africa", "australia"];
 
 // next click
 next.onclick = function(){
@@ -13,6 +19,8 @@ next.onclick = function(){
     if(itemActive >= countItem){
         itemActive = 0;
     }
+    window.sessionStorage.setItem("currentContinent", continents[itemActive]);
+
     showSlider();
 }
 // prev click
@@ -21,6 +29,8 @@ prev.onclick = function(){
     if(itemActive < 0){
         itemActive = countItem - 1;
     }
+    window.sessionStorage.setItem("currentContinent", continents[itemActive]);
+
     showSlider();
 }
 // auto run slider
@@ -51,6 +61,7 @@ function showSlider(){
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('click', () => {
         itemActive = index;
+        window.sessionStorage.setItem("currentContinent", continents[itemActive]);
         showSlider();
     })
 })

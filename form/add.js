@@ -9,6 +9,7 @@ submitButton.addEventListener("click", ()=>{
     // Check all inputs are there
     if(!campName.value || !campImage.value || campContinent.value == 0){
         location.reload();
+        return;
     }
 
     // Add to local storage
