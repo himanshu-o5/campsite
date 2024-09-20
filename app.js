@@ -3,10 +3,11 @@ let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 let thumbnails = document.querySelectorAll('.thumbnail .item');
 
-// config param
+// variables for current active
 let countItem = items.length;
 let itemActive = 0;
-// event next click
+
+// next click
 next.onclick = function(){
     itemActive = itemActive + 1;
     if(itemActive >= countItem){
@@ -14,7 +15,7 @@ next.onclick = function(){
     }
     showSlider();
 }
-//event prev click
+// prev click
 prev.onclick = function(){
     itemActive = itemActive - 1;
     if(itemActive < 0){
@@ -25,7 +26,9 @@ prev.onclick = function(){
 // auto run slider
 let refreshInterval = setInterval(() => {
     next.click();
-}, 5000)
+}, 10000)
+
+// main function that will change the active class for items.
 function showSlider(){
     // remove item active old
     let itemActiveOld = document.querySelector('.slider .list .item.active');

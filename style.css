@@ -18,10 +18,11 @@ header{
     align-items: center;
     position: relative;
     z-index: 100;
-    background-color: rgba(117, 108, 108, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    top: 20px;
 }
 header .logo{
     font-weight: bold;
@@ -150,7 +151,7 @@ header .menu li:hover{
 .thumbnail .item{
     width: 150px;
     height: 220px;
-    filter: brightness(.5);
+    filter: brightness(.7);
     transition: .5s;
     flex-shrink: 0;
 }
