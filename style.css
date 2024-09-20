@@ -41,6 +41,12 @@ header .menu li:hover{
     cursor: pointer;
 }
 
+header .menu a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
 /* css slider */
 .slider{
     height: 100vh;

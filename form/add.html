@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="add.css">
+    <title>Campsite</title>
+</head>
+<body>
+    <div class="form">
+        <h1>Add Camp</h1>
+
+        <div class="camp-inputs">
+            <input type="text" name="name" id="camp-name" placeholder="Name">
+            <!-- <input type="text" name="location" id="camp-location" placeholder="Location"> -->
+            <input type="text" name="camp-image-url" id="camp-image-url" placeholder="Image URL">
+
+            <!-- <label for="camp-continent">Continent</label> -->
+            <select name="camp-continent" id="camp-continent">
+                <option value="0" selected>- Select -</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="america">America</option>
+                <option value="africa">Africa</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+        
+        <button id="submitButton">Submit</button>
+    </div>
+    
+    <script src="./add.js" defer></script>
+</body>
+</html> 
