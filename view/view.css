@@ -23,7 +23,8 @@ nav{
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 15%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -69,7 +70,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 header::before {
     content: '';
@@ -108,9 +109,9 @@ header::before {
 
 .gallery {
     column-count: 3;
-    column-gap: 1rem; 
+    column-gap: 1.3rem; 
     padding: 1rem;
-    margin: 0px 100px;
+    margin: 0px 5%;
 }
 
 .gallery-item {
@@ -119,6 +120,10 @@ header::before {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+.gallery-item:hover{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item img {
