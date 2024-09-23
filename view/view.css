@@ -60,7 +60,7 @@ nav .menu a{
 header{
     min-height: 400px;
     position: relative;
-    background-image: url('../assets/europe.jpg');
+    background-image: url('../assets/asia.jpg');
     background-size: cover; 
     background-position: center;
     color: #ffffff; 
@@ -96,12 +96,13 @@ header::before {
     width: 100%;
     text-align: center;
     font-size: 1rem;
+    text-shadow: 1px 1px 1px black;
 }
 
 .view-header .continent{
     align-items: center;
     font-size: 5rem;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 

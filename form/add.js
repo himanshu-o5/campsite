@@ -33,6 +33,6 @@ submitButton.addEventListener("click", ()=>{
 
     // Set new array to local storage
     window.localStorage.setItem(campContinent.value, JSON.stringify(newContinents));
-
+    location.replace("../index.html");
 
 });
